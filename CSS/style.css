@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --text-color:#151010;
+    --bg-color:rgb(245, 241, 241);
+}
+
+
+a{
+    text-decoration: none;
+}
+
+ul ol{
+    list-style:none;
+}
+
+body{
+    font-family:"arial";
+    background-color:var(--bg-color);
+}
+
+.container{
+    width: 1170px;
+    margin:auto;
+}
+
+
+.align-items{
+    align-items: center;
+}
+
+
+.justify-center{
+    justify-content: center;
+}
+
+
+/* cursor start */
+.cursor{
+    width: 40px;
+    height: 40px;
+    border:1px solid var(--text-color);
+    border-radius:50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99999999;
+    transform: translate(-50%,-50%);
+}
+/* cursor and */
+
+/* light & dark start */
+
+#darkModeSection{
+    height: 100vh;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+ .wrapper h2{
+    display: inline-block;
+    font-size: 60px;
+    color:var(--text-color);
+    margin-right: 30px;
+    margin-top: 30px;
+
+}
+
+ .wrapper .darkModeBtn{
+    width: 40px;
+    height: 40px;
+   text-align: center;
+    border:none;
+    overflow:hidden;
+    
+}
+
+.wrapper .darkModeBtn span{
+    width: 100%;
+    height: 100%;
+    display: block;
+    font-size: 20px;
+}
+
+
+
+.wrapper button span.sun{
+    background-color: yellow;
+    transition: 0.3s;
+    
+}
+
+.wrapper button span.moon{
+    background-color: rgb(22, 22, 13);
+    color:white;
+
+}
+
+    
+body.darkmode{
+    --text-color:white;
+    --bg-color:rgba(16, 2, 2, 0.889);
+}
+
+body.darkmode .wrapper button .sun{
+    margin-top: 100%;
+}
+
+
+
+/* light & dark and */
+
+
